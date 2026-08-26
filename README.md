@@ -14,22 +14,22 @@ This is an active work-in-progress, not a finished multi-node system — see **C
 ## 2. Current Status
 
 ### Implemented
-- ✅ ESP32 PlatformIO project setup
-- ✅ TWAI (CAN) controller initialization
-- ✅ 500 kbps CAN bit-rate configuration
-- ✅ CAN frame transmission
-- ✅ CAN frame reception via a dedicated FreeRTOS task
-- ✅ Software-level identifier filtering
-- ✅ GPIO-level loopback validation (TX↔RX jumpered, no transceiver)
+-  ESP32 PlatformIO project setup
+-  TWAI (CAN) controller initialization
+-  500 kbps CAN bit-rate configuration
+-  CAN frame transmission
+-  CAN frame reception via a dedicated FreeRTOS task
+-  Software-level identifier filtering
+-  GPIO-level loopback validation (TX↔RX jumpered, no transceiver)
 
 ### Planned
-- ⬜ Hardware loopback validation with SN65HVD230 transceiver
-- ⬜ Hardware acceptance filtering (TWAI controller filter registers)
-- ⬜ CAN error and bus-status monitoring
-- ⬜ Defined CAN message protocol (IDs, payload layout)
-- ⬜ PC-based CAN simulation / bus-off testing
-- ⬜ STM32 firmware port
-- ⬜ Physical two-node CAN bus communication
+-  Hardware loopback validation with SN65HVD230 transceiver
+-  Hardware acceptance filtering (TWAI controller filter registers)
+-  CAN error and bus-status monitoring
+-  Defined CAN message protocol (IDs, payload layout)
+-  PC-based CAN simulation / bus-off testing
+-  STM32 firmware port
+-  Physical two-node CAN bus communication
 
 ## 3. Hardware
 
@@ -117,29 +117,29 @@ Two-Node-CAN-Bus-Communication/
 ## 9. Roadmap
 
 **Phase 1 — ESP32 CAN (in progress)**
-- ✅ Transmission and reception
-- ✅ Identifier filtering (software)
-- ⬜ Hardware acceptance filtering
-- ⬜ Error monitoring
+-  Transmission and reception
+-  Identifier filtering (software)
+-  Hardware acceptance filtering
+-  Error monitoring
 
 **Phase 2 — CAN Protocol**
-- ⬜ Message identifiers
-- ⬜ Payload definitions
-- ⬜ Status and control messages
+-  Message identifiers
+-  Payload definitions
+-  Status and control messages
 
 **Phase 3 — Simulation**
-- ⬜ CAN node simulation
-- ⬜ Arbitration behavior
-- ⬜ Message priority and filtering
+-  CAN node simulation
+-  Arbitration behavior
+-  Message priority and filtering
 
 **Phase 4 — STM32 Portability**
-- ⬜ STM32 CAN peripheral configuration
-- ⬜ Firmware port
+-  STM32 CAN peripheral configuration
+-  Firmware port
 
 **Phase 5 — Multi-Node Network**
-- ⬜ SN65HVD230 transceiver integration
-- ⬜ Physical bus wiring
-- ⬜ Two-node validation
+-  SN65HVD230 transceiver integration
+-  Physical bus wiring
+-  Two-node validation
 
 ## Development
 
